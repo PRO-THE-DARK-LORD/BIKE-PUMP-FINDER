@@ -1,0 +1,43 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "ph ph ph ph ph ph"
+        "ln cn cn cn cn cn"
+        "ln cn cn cn cn cn";
+    gap: 10px; /* Adds some space between grid items */
+    padding: 20px;
+}
+
+header {
+    grid-area: ph;
+    font-family: sans-serif;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    grid-area: ln;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    grid-area: cn;
+}
+
+#search input {
+    padding: 5px;
+    font-size: medium;
+}
+
+#search {
+    display: flex;
+    align-items: center;
+}
+
+.fa-search {
+    margin-left: 10px;
+    cursor: pointer;
+}
